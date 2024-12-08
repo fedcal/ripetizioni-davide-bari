@@ -18,7 +18,7 @@ public class Studente {
 
     //METODI
     public String getNome() {
-        return nome;
+        return this.nome;
     }
     public void setNome(String nome) {
         this.nome = nome;
@@ -40,11 +40,23 @@ public class Studente {
         this.matricola = matricola;
     }
 
+    public int getAnnoNascita() {
+        return annoNascita;
+    }
+
+    public void setAnnoNascita(int annoNascita) {
+        this.annoNascita = annoNascita;
+    }
+
     public void infoStudente() {
         System.out.println("Nome: " + this.nome + "\nCognome: " + this.cognome + "\nMatricola: " + this.matricola);
     }
 
     public int calcolaEta(int annoCorrente){
         return annoCorrente - this.annoNascita;
+    }
+
+    public boolean equals(Object studenteInput){
+        return this.nome.equals(((Studente) studenteInput).nome);
     }
 }
