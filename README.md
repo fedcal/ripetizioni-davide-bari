@@ -26,4 +26,4 @@ QUANDO FAI MODIFICHE
 2. Fare le modifiche al codice
 3. git add .
 4. git commit -m "GG/MM/yyyy" (ovviamente modificare la data)
-5. git push -f origin
+5. git push
